@@ -4,7 +4,7 @@ Plugin Name: avalex - Automatisch sichere Rechtstexte
 Description: Ermöglicht die Einbindung der automatisch aktuellen Rechtstexte von avalex. Einen API Key erhalten Sie auf www.avalex.de.
 Author: avalex GmbH
 Author URI: https://avalex.de/
-Version: 3.1.1
+Version: 3.1.2
 Text Domain: Avalex
 Domain Path: /languages
 */
@@ -15,7 +15,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 class Avalex
 {
-	const PLUGIN_VERSION = '3.1.1'; //TODO update corresponding version digit on each code update
+	const PLUGIN_VERSION = '3.1.2'; //TODO update corresponding version digit on each code update
 	protected $pluginPath = '';
 	protected $tableName = '';
 	protected $wp_version = '';
@@ -763,7 +763,7 @@ class Avalex
 		elseif ( class_exists( '\Kinsta\Cache' ) && ! empty( $kinsta_cache ) ) {
 			$kinsta_cache->kinsta_cache_purge->purge_complete_caches();
 		} // GoDaddy Cache
-		elseif ( class_exists( '\WPaaS\Cache' ) ) {
+		elseif ( function_exists( 'ccfm_godaddy_purge' ) ) {
 			ccfm_godaddy_purge();
 		} // WP Optimize
 		elseif ( class_exists( 'WP_Optimize' ) && defined( 'WPO_PLUGIN_MAIN_PATH' ) ) {
