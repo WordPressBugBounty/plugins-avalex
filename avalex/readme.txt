@@ -2,7 +2,7 @@
 Contributors: avalexgmbh
 Tags: Recht, Rechtstext, Rechtstexte
 Requires at least: 4.0
-Tested up to: 6.7
+Tested up to: 6.8
 Requires PHP: 7.0
 Stable tag: 3.1.2
 License: GPLv2 or later
