@@ -4,7 +4,7 @@ Tags: Recht, Rechtstext, Rechtstexte
 Requires at least: 4.0
 Tested up to: 6.9
 Requires PHP: 7.0
-Stable tag: 3.1.3
+Stable tag: 3.1.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -86,4 +86,7 @@ Terms and conditions: `[avalex_en_agb]`
 10. Fertig. Ab sofort halten wir Ihre Rechtstexte automatisch aktuell.
 
 == Changelog ==
+
+= 3.1.4 =
+* Security: Added nonce verification to forceUpdate() to prevent CSRF attacks
 
